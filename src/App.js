@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import NewUser from "./components/users/NewUser";
 import UserList from "./components/users/UserList";
+import Card from "./components/UI/Card";
 
 function App() {
   const [userList, setUserList] = useState([]);
@@ -15,12 +16,12 @@ function App() {
     content = <UserList listItems={userList} />
   }
   return (
-    <div className="App">
+    <Card className="App">
       <section>
         <NewUser onAddUser={userListHandler} />
       </section>
       <section>{content}</section>
-    </div>
+    </Card>
   );
 }
 

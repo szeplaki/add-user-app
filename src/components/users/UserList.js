@@ -1,8 +1,10 @@
+import Card from "../UI/Card";
+
 const UserList = (props) => {
  return (
-    <ul>
+    <Card>
         {props.listItems.map((user) => <li>{user.name} {user.age} years old</li>)}
-    </ul>
+    </Card>
  )   
 }
 

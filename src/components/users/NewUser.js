@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../UI/Button";
+import Card from "../UI/Card";
 
 const NewUser = (props) => {
 
@@ -19,6 +20,7 @@ const NewUser = (props) => {
     }
 
   return (
+    <Card>
     <form onSubmit={formSubmitHandler}>
       <label>Username</label>
       <input onChange={userNameHandler}/>
@@ -28,6 +30,7 @@ const NewUser = (props) => {
       <br></br>
       <Button>Add user</Button>
     </form>
+    </Card>
   );
 };
 export default NewUser;
