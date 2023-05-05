@@ -22,11 +22,11 @@ const NewUser = (props) => {
   return (
     <Card>
     <form onSubmit={formSubmitHandler}>
-      <label>Username</label>
-      <input onChange={userNameHandler}/>
+      <label htmlFor="username">Username</label>
+      <input id="username" type="text" onChange={userNameHandler}/>
       <br></br>
-      <label>Age (Years)</label>
-      <input onChange={userAgeHandler}/>
+      <label htmlFor="userage">Age (Years)</label>
+      <input id="userage" type="number" onChange={userAgeHandler}/>
       <br></br>
       <Button>Add user</Button>
     </form>
